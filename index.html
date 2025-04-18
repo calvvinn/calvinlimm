@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>its me, calvin!</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ---logo--- -->
+    <link rel="icon" type="image/x-icon" href="/images/favilogo.png">
+
+    <!-- ---fonts--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-----icons---(me lol)-->
+    <link 
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+
+</head>
+
+
+<body>
+
+    <header class="headerMain" id="home">
+        <nav>
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <div class="main-text">
+            <h1>i am calvin.</h1>
+            <p>Computer Nerd, Engineer, Creator</p>
+            <a href="/documents/Calvin_Lim_Resume.pdf" class="resum-btn" target="_blank">Résumé</a>
+        </div>
+
+    </header>
+
+
+    <!-- ---about me--- -->
+    <section class="about" id="about">
+
+        <h1>About Me</h1>
+
+        <div class="row">
+
+            <div class="col">
+                <h3>Personal</h3>
+                <p>Hey! My name is Calvin Lim. I'm a Cambodian boy born and raised in Columbus, Ohio. I like the piano, tennis, and I sometimes make cool stuff. I make mistakes occastionally, but I'm still learning. My ultimate goal is to make peoples lives easier.</p>
+            </div>
+
+            <div class="col">
+                <h3>University</h3>
+                <p>I'm currently entering my 2nd year at <br><b>The Ohio State University</b> pursuing my bachelors degree for Computer Science & Engineering while also attending <b>Columbus State Community College</b>. I'm involved in The Electronics Club and <a href="https://hack.osu.edu/make/2022/">MakeOH/IO</a></p>
+            </div>
+
+            <div class="col">
+                <h3>Computer Science & Engineering</h3>
+                <p>Write a program? Done it. Make a website? You're looking at one of them. Make an arcade game? I've made multiple in different languages. Use Linux? Sadly. Engineer a robot that gives high-fives and passes Googles reCAPTCHA? Simple. I'm passionate of anything computers, smartphones, and engineering.</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- ---projects--- -->
+    <section class="projects" id="projects">
+
+        <h1>My Projects</h1>
+        <p>A few projects that I have personally and independently designed, programmed, and engineered</p>
+
+        <div class="row">
+
+            <div class="projectsCol">
+
+                <img src="/images/toolGunCompressed.gif" alt="">
+                <div class="layer">
+                    <h3>Tool Gun</h3>
+                </div>
+
+            </div>
+
+            <div class="projectsCol">
+
+                <img src="/images/leoCompressed.gif" alt="">
+                <div class="layer">
+                    <h3>LEONARDO</h3>
+                </div>
+
+            </div>
+
+            <div class="projectsCol">
+
+                <img src="/images/CIKICompressed.gif" alt="">
+                <div class="layer">
+                    <h3>CIKI</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ---second row--- -->
+
+        <div class="row">
+
+            <div class="projectsCol">
+
+                <img src="/images/armCompressed.gif" alt="">
+                <div class="layer">
+                    <h3>ARMO</h3>
+                </div>
+
+            </div>
+
+            <div class="projectsCol">
+
+                <img src="/images/bmoCompressed.gif" alt="">
+                <div class="layer">
+                    <h3>BMO</h3>
+                </div>
+
+            </div>
+
+            <div class="projectsCol">
+
+                <img src="/images/mash.png" alt="">
+                <div class="layer">
+                    <h3 style="font-family: 'Press Start 2P', cursive;">MASH!</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- _____________________________________________________ -->
+
+
+    <section class="videos" id="videos">
+
+        <h1>Videos</h1>
+        <p>Content I filmed, directed, and edited</p>
+
+        <div class="row">
+            <div class="vid-col">
+                <iframe width="1125" height="633" src="https://www.youtube.com/embed/kBaG2yRl-0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Tool Gun</h3>
+                <p>Making of the "Tool Gun" utility from the popular game <em>gmod</em></p>
+            </div>
+            <div class="vid-col">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/I_9zyeS8EYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Leonardo</h3>
+                <p>Making of "Leonardo", a <em>smart</em> rover that roams wherever it feels so (and gives high fives!)</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ---contact--- -->
+
+    <section class="contact">
+
+        <h1>Let's Get In Touch</h1>
+        <a href="contact.html" class="resum-btn">Contact</a>
+
+
+
+    </section>
+
+
+    <!-- ---footer--- -->
+
+    <section class="footer">
+
+        <h4>Miscellaneous</h4>
+        <p>In case you want to keep up to date with me and my social medias.<br> You should check them out, I post some pretty cool stuff...</p>
+
+        <div class="icons">
+            <a href="https://www.instagram.com/calvvinlim/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCvBFRqtEmFNs8zrBKk4Z4Rw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+        </div>
+
+        <p>focus on yourself <a href="secret.html"><i class="fa fa-heart-o"></i></a>.</p>
+
+    </section>
+
+
+
+    <!-- ---javascript---smh-->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+    
+</body>
+</html>
