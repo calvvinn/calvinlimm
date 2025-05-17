@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>super secret page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ---fonts--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-----icons---(me lol)-->
+    <link 
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+
+
+
+    <style>
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .fade-in-text {
+            opacity: 0;
+            transform: translateY(100%);
+            animation: fadeIn 2s ease-in-out forwards, riseUp 2s ease-in-out forwards;
+        }
+
+        .fade-in-text:nth-child(2) {
+            animation-delay: 3s;
+        }
+
+        .fade-in-text:nth-child(3) {
+            animation-delay: 6s;
+        }
+
+        .fade-in-text:nth-child(4) {
+            animation-delay: 9s;
+        }
+
+        .fade-in-text:nth-child(5) {
+            animation-delay: 10s;
+        }
+
+        .fade-in-text:nth-child(6) {
+            animation-delay: 11s;
+        }
+
+        .fade-in-text:nth-child(7) {
+            animation-delay: 12s;
+        }
+
+        .fade-in-text:nth-child(8) {
+            animation-delay: 14s;
+        }
+
+        .fade-in-text:nth-child(9) {
+            animation-delay: 17s;
+        }
+
+        .fade-in-text:nth-child(10) {
+            animation-delay: 19s;
+        }
+
+        .fade-in-text:nth-child(11) {
+            animation-delay: 21s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes riseUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body style="text-align: center; padding-top: 30px;">
+
+    <!--
+    <audio id="background-music" autoplay>
+        <source src="sound/autumn.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    -->
+
+    <div class="fade-in-text">
+        <h1>Happy <span style="color: rgb(255 183 197);">3</span> Months Molina</h1>
+    </div>
+
+    <div class="fade-in-text">
+        <h2>My absolute most beautiful, cute, stunning, gorgeous, amazong <span style="color: rgb(255 183 197);">love.</span></h2>
+    </div>
+
+    <div class="fade-in-text" style="padding-top: 20px;">
+        <h2>A formal <span style="color: rgb(255 183 197);">invitation</span> to celebrate our time together on...</h2>
+    </div>
+
+    <div class="fade-in-text" style="padding-top: 20px;">
+        <h1>April 10th</h1>
+    </div>
+
+    <div class="fade-in-text">
+        <h1><span style="font-size: 30px;">Time:</span> 7:00pm</h1>
+    </div>
+
+    <div class="fade-in-text">
+        <h1><span style="font-size: 30px;">Where:</span> ????<span style="font-size: 10px;">(hehehe)</span></h1>
+    </div>
+
+    <div class="fade-in-text">
+        <h1><span style="font-size: 30px;">With:</span> Calvin :D</h1>
+    </div>
+
+    <div class="fade-in-text" style="padding-top: 20px;">
+        <h2><span style="font-size: 30px;">Attire:</span><span style="font-size: 10px;"> (You're already goregous without even trying so this part is irrelevent.)</span> <br> Business casual or semi-formal attire. Dress tastefully.</h2>
+    </div>
+
+    <div class="fade-in-text" style="padding-top: 40px;">
+        <h2>I will pick you up :)</h2>
+        <h2>Many more to come my love</h2>
+    </div>
+
+    <div class="fade-in-text" style="padding-bottom: 30px;">
+        <h1 style="color: rgb(255 183 197);"><3</h1>
+    </div>
+
+    <div class="fade-in-text" style="padding-bottom: 50px;">
+        <img src="images/kiss.jpg" width="400px" height="220px" alt="">
+    </div>
+
+    <script>
+        document.getElementById('background-music').addEventListener('canplay', function() {
+          // Once the audio is ready to play, start the text fade-ins
+          document.querySelectorAll('.fade-in-text').forEach(function(element, index) {
+            element.style.animationDelay = (2 * index) + 's'; // Adjust delay based on index
+          });
+        });
+
+    </script>
+
+</body>
+</html>

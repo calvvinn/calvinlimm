@@ -129,6 +129,13 @@ nav .fa {
 
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
 /* ---about me--- */
 
 .about {
@@ -144,11 +151,38 @@ h1 {
     font-family: 'Poppins', sans-serif;
 }
 
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
 h3 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-weight: 600;
     margin: 5% 0;
+
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    margin: 5% 0;
+
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    margin: 5% 0;
+
+}
+
+h6 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 600;
 
 }
 
@@ -210,6 +244,20 @@ p {
     height: 100%;
 }
 
+.projectsBig {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.projectsBig img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
 .layer {
     background: transparent;
     height: 100%;
@@ -241,6 +289,40 @@ p {
     bottom: 49%;
     opacity: 1;
 }
+
+/* _____BIG PROJECT______ */
+.layerBig {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layerBig:hover {
+    background: rgba(44, 148, 232, 0.7);
+}
+
+.layerBig h3 {
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layerBig:hover h3 {
+    bottom: 38%;
+    opacity: 1;
+}
+/*----------------------*/
 
 .videos {
     width: 80%;
