@@ -1,301 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>its me, calvin! :D</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- ---logo--- -->
-    <link rel="icon" type="image/x-icon" href="/images/favilogo.png">
-
-    <!-- ---fonts--- -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <!-----icons---(me lol)-->
-    <link 
-    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calvin Lim | Engineer & Creator</title>
+  <link rel="icon" href="images/favilogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
+  <header class="site-header" id="home">
+    <nav class="navbar">
+      <a href="index.html" class="logo">calv</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="overlay"></div>
+    <div class="hero">
+      <h1>Hey, I'm <span class="accent">Calvin </span>(calv)</h1>
+      <p>Engineer &amp; Creator</p>
+      <a href="documents/Calvin_Lim_Resume.pdf" class="btn">Download Résumé</a>
+    </div>
+    <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">
+      <span>&#x2193;</span>
+    </div>
+  </header>
 
-    <header class="headerMain" id="home">
-        <nav>
-            <div class="nav-links" id="navLinks">
-
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-
-        </nav>
-
-        <div class="main-text">
-            <h1>hey, i'm calvin.</h1>
-            <p>Computer nerd, Engineer, Creator</p>
-            <a href="/documents/Calvin_Lim_Resume.pdf" class="resum-btn" target="_blank">Résumé</a>
-        </div>
-
-    </header>
-
-
-    <!-- ---about me--- -->
-    <section class="about" id="about">
-
-        <h1>About Me</h1>
-
-        <div class="row">
-
-            <div class="col">
-                <h3>Personal</h3>
-                <p>Hey! My name is Calvin Lim. I was born and raised in Columbus, Ohio. Though my parents are from Cambodia. I like to make stuff!</p>
-            </div>
-
-            <div class="col">
-                <h3>University</h3>
-                <p>I'm a 4th year engineer at the Ohio State University! And what a rollercoaster of a ride it has been. But thats whats made it fun and interesting...</p>
-            </div>
-
-            <div class="col">
-                <h3>Electrical & Computer Engineering</h3>
-                <p>I've encountered and worked with many advanced programming languages, algorithms, data structures, operating systems, and engineering problems. It exposed me to complex problem-solving skills and design/implemntation techniques.</p>
-            </div>
-
-        </div>
-
-
+  <main>
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <div class="grid">
+        <div><h3>Personal</h3><p>I was born and raised in Columbus, Ohio. My parents are from Cambodia, and I love making things :D.</p></div>
+        <div><h3>University</h3><p>4th-year Electrical & Computer Engineering student at The Ohio State University with a passion for problem-solving.</p></div>
+        <div><h3>Electrical & Computer Engineering</h3><p>The more and more I get myself into my projects and run into problems. Somehow, the more I love it.</p></div>
+      </div>
     </section>
-
-    <!-- ---projects--- -->
-    <section class="projects" id="projects">
-
-        <h1>My Projects</h1>
-        <p>A few projects that I have personally and independently designed, programmed, and engineered. (click on them, they have videos :D)</p>
-
-        <!-- 1st BIG ROW -->
-        <section>
-
-            <div class="projectsBig">
-                <img src="/images/forherGIF.gif" alt="">
-                <div class="layerBig">
-                    <a href="https://youtube.com/shorts/SGZ0sXmQt_g"><h3>for her.</a></h3>
-                </div>
-            </div>
-    
-
-        </section>
-
-
-        <!-- ---2nd SMALL ROW--- -->
-
-
-        <div class="row">
-
-            <div class="projectsCol">
-
-                <img src="/images/toolGunCompressed.gif" alt="">
-                <div class="layer">
-                    <a href="https://youtu.be/GyDlfaeF4aA?si=jF5oBdo2UJMjJDPW"><h3>Tool Gun</a></h3>
-                </div>
-
-            </div>
-
-            <div class="projectsCol">
-
-                <img src="/images/leoCompressed.gif" alt="">
-                <div class="layer">
-                    <a href="https://youtu.be/I_9zyeS8EYs"><h3>LEONARDO</a></h3>
-                </div>
-
-            </div>
-
-            <div class="projectsCol">
-
-                <img src="/images/CIKICompressed.gif" alt="">
-                <div class="layer">
-                    <a href="https://youtube.com/shorts/bPH7TcgbGko"><h3>CIKI</a></h3>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- 3rd BIG ROW -->
-        <section>
-
-            <div class="projectsBig">
-                <img src="/images/arm2.0.gif" alt="">
-                <div class="layerBig">
-                    <a href="https://youtu.be/sp7Ny4Ea2UA"><h3>ARMO</a></h3>
-                </div>
-            </div>
-    
-
-        </section>
-
-        <!-- ---4th SMALL ROW--- -->
-
-        <div class="row">
-
-            <div class="projectsCol">
-
-                <img src="/images/armCompressed.gif" alt="">
-                <div class="layer">
-                    <h3>ARMO</h3>
-                </div>
-
-            </div>
-
-            <div class="projectsCol">
-
-                <img src="/images/watch.gif" alt="">
-                <div class="layer">
-                    <h3>U.es.B</h3>
-                </div>
-
-            </div>
-
-            <div class="projectsCol">
-
-                <img src="/images/mash.png" alt="">
-                <div class="layer">
-                    <h3 style="font-family: 'Press Start 2P', cursive;">MASH!</h3>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- 5th BIG ROW -->
-
-        <section>
-
-            <div class="projectsBig">
-                <img src="/images/forherGIF.gif" alt="">
-                <div class="layerBig">
-                    <a href="https://youtube.com/shorts/SGZ0sXmQt_g"><h3>Speedometer Helmet</a></h3>
-                </div>
-            </div>
-    
-
-        </section>
-
-        <!-- ---6th SMALL ROW--- -->
-
-        <div class="row">
-
-            <div class="projectsCol">
-
-                <img src="/images/trashcanGIF.gif" alt="">
-                <div class="layer">
-                    <a href="https://youtu.be/Z6gpdL_Kl8M?si=fTOrJHgS4PWxgFWu"><h3>Motorized Trashcan!</a></h3>
-                </div>
-
-            </div>
-
-            <div class="projectsCol">
-
-                
-                <div class="layer">
-                    <h3>coming soon</h3>
-                </div>
-
-            </div>
-
-            <div class="projectsCol">
-
-                <div class="layer">
-                    <h3>coming soon</h3>
-                </div>
-
-            </div>
-
-        </div>
-
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+      <p>A selection of my independent creations. Click to view videos.</p>
+      <div class="grid projects-grid">
+        <a href="https://youtube.com/shorts/SGZ0sXmQt_g" class="project-card large-span">
+          <img src="images/forherGIF.gif" alt="Featured Project">
+          <h3>Featured Project</h3>
+        </a>
+        <a href="https://youtube.com/shorts/bPH7TcgbGko" class="project-card"><img src="images/CIKICompressed.gif" alt="CIKI"><h3>CIKI</h3></a>
+        <a href="https://youtu.be/GyDlfaeF4aA?si=jF5oBdo2UJMjJDPW" class="project-card"><img src="images/toolGunCompressed.gif" alt="Tool Gun"><h3>Tool Gun (30k+ Views)</h3></a>
+        <a href="https://youtu.be/I_9zyeS8EYs" class="project-card"><img src="images/leoCompressed.gif" alt="Leonardo"><h3>Leonardo</h3></a>
+        <a href="https://youtu.be/sp7Ny4Ea2UA" class="project-card large-span">
+          <img src="images/arm2.0.gif" alt="Featured Project">
+          <h3>Featured Project</h3>
+        </a>
+        <a href="https://youtube.com/shorts/q1Qnh5_ssR4" class="project-card"><img src="images/watch.gif" alt="uesb"><h3>uesb</h3></a>
+        <a href="#" class="project-card"><img src="images/mash.png" alt="MASH!"><h3>MASH!</h3></a>
+        <a href="https://youtu.be/Z6gpdL_Kl8M" class="project-card"><img src="images/trashcanGIF.gif" alt="Trashcan"><h3>Motorized Trashcan</h3></a>
+        <a href="https://youtu.be/26S4BPdl6pQ" class="project-card large-span">
+          <img src="images/strangersGIF.gif" alt="Featured Project">
+          <h3>Featured Project</h3>
+        </a>
+      </div>
     </section>
-    
-    <!-- _____________________________________________________ -->
-
-
-    <section class="videos" id="videos">
-
-        <h1>Videos</h1>
-        <p>Content I filmed, directed, and edited</p>
-
-        <div class="row">
-            <div class="vid-col">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/GyDlfaeF4aA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h3>Tool Gun</h3>
-                <p>Making of the "Tool Gun" utility from the popular game <em>gmod</em> (30k+ views)</p>
-            </div>
-            <div class="vid-col">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/I_9zyeS8EYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3>Leonardo</h3>
-                <p>Making of "Leonardo", a <em>smart</em> rover that roams wherever it feels so (and gives high fives!)</p>
-            </div>
-        </div>
-
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p>Cool eh? Let's get in touch.</p>
+      <a href="contact.html" class="btn">Contact Me</a>
     </section>
+  </main>
 
-    <!-- ---contact--- -->
+  <footer class="site-footer">
+    <p>© 2025 Calvin Lim. Made with <span class="heart">❤</span>.</p>
+    <div class="social">
+      <a href="https://www.instagram.com/calvvinlim/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@pinao168" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </footer>
 
-    <section class="contact">
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
+  </script>
 
-        <h1>Let's Get In Touch</h1>
-        <a href="contact.html" class="resum-btn">Contact</a>
-
-
-
-    </section>
-
-
-    <!-- ---footer--- -->
-
-    <section class="footer">
-
-        <h4>Miscellaneous</h4>
-        <p>In case you want to keep up to date with me and my social medias.<br> You should check them out, I post some pretty cool stuff...</p>
-
-        <div>
-            <a href="https://www.instagram.com/calvvinlim/" target="_blank"><h5 style="color: rgba(44, 148, 232, 0.7);">instagram</h5></a>
-            <a href="https://www.youtube.com/@pinao168" target="_blank"><h5 style="color: rgba(44, 148, 232, 0.7);">youtube</h5></a>
-        </div>
-
-        <p>focus on yourself <a href="secret.html"><i class="fa fa-heart-o"></i></a>.</p>
-
-    </section>
-
-
-
-    <!-- ---javascript---smh-->
-
-    <script>
-
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
-
-    </script>
-
-
-    
 </body>
 </html>
