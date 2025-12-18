@@ -618,17 +618,28 @@ a { color: var(--accent); text-decoration: none; }
     .nav-toggle { display: block; }
 
     .nav-menu {
-    display: none;
-    flex-direction: column;
-    background: var(--primary);
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 200px;
-    padding: 1rem;
+        display: none; /* Keeps it hidden by default */
+        flex-direction: column;
+        background: var(--primary);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+        z-index: 10; /* Ensure it stays on top of the hero overlay */
     }
 
-    .nav-menu.active { display: flex; }
+    /* THIS IS THE MISSING PIECE: */
+    .nav-menu.active { 
+        display: flex; 
+    }
+
+    /* Ensure the links are visible and white on the mobile background */
+    .nav-menu li a {
+        color: white;
+        display: block;
+        padding: 0.5rem 0;
+    }
 }
 
 .hero {
@@ -889,3 +900,40 @@ a { color: var(--accent); text-decoration: none; }
 }
 
 .heart { color: red; }
+
+/* ---------- Mobile / Responsive fixes ---------- */
+
+/* Prevent any tiny accidental horizontal scrolling */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make the projects grid responsive (no fixed 3 columns, no 300px minimum) */
+.projects-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Phone: 1 column */
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Optional: make cards a bit less tall on phones */
+  .project-card { aspect-ratio: 4 / 5; }
+  .project-card.large-span { aspect-ratio: 16 / 9; }
+
+  /* Optional: slightly smaller hero text so it fits clean */
+  .hero h1 { font-size: 2.2rem; }
+  .hero p { font-size: 1.1rem; }
+}
+
