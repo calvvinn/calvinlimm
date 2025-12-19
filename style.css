@@ -937,3 +937,256 @@ html, body {
   .hero p { font-size: 1.1rem; }
 }
 
+/* =========================
+   Contact Page (matches main style)
+   ========================= */
+
+/* A shorter hero header than the homepage */
+.page-header {
+  position: relative;
+  background: var(--primary) url('images/bannerCompressed.gif') center/cover no-repeat;
+  height: 52vh;
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero--compact h1 {
+  font-size: 2.6rem;
+}
+
+.hero--compact p {
+  max-width: 700px;
+  margin: 0.5rem auto 0;
+}
+
+/* Contact layout */
+.contact-page {
+  background: #f9f9f9;
+  margin: 4rem auto;
+  border-radius: 8px;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.contact-wrap {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .contact-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.contact-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.contact-card h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin: 0.5rem auto 0;
+}
+
+.muted {
+  color: #666;
+  font-weight: 300;
+}
+
+.contact-list {
+  margin-top: 1.25rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #f7f7f7;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.contact-label {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.contact-value {
+  font-size: 1.05rem;
+  color: var(--accent);
+  word-break: break-word;
+}
+
+.contact-note {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+/* Form styling */
+.contact-form {
+  margin-top: 1.25rem;
+}
+
+.form-row {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.field {
+  display: grid;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.field label {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  outline: none;
+  font-family: var(--font);
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: rgba(44,148,232,0.7);
+  box-shadow: 0 0 0 4px rgba(44,148,232,0.15);
+}
+
+.btn--full {
+  width: 100%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(44,148,232,0.5);
+}
+
+.btn--ghost:hover {
+  opacity: 0.95;
+}
+
+.form-hint {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+/* Single-column contact layout */
+.contact-wrap--single {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card--center {
+  max-width: 560px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-card--center .contact-item {
+  text-align: left;
+}
+
+/* ---- Projects grid: remove dead space, always fill the row ---- */
+.projects-grid{
+  display: grid;
+  gap: 2rem;
+
+  /* 3 columns on desktop, but columns are flexible (no fixed 300px mins) */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: stretch;
+}
+
+.project-card{
+  display: block;  /* make sure <a> behaves like a full tile */
+  width: 100%;
+}
+
+/* Your wide "featured" cards still span full width */
+.projects-grid .large-span{
+  grid-column: 1 / -1;
+}
+
+/* 2 columns on smaller screens */
+@media (max-width: 1000px){
+  .projects-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* 1 column on phones */
+@media (max-width: 600px){
+  .projects-grid{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* --- Projects: force 1 tile per row on mobile --- */
+@media (max-width: 700px){
+  .projects-grid{
+    grid-template-columns: 1fr !important; /* override any older grid rules */
+  }
+
+  .project-card{
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px){
+  #projects{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .projects-container{
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,129 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Calvin Lim</title>
+  <link rel="icon" href="images/favilogo.png" />
 
-    <!-- ---fonts--- -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <!-----icons---(me lol)-->
-    <link 
-    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-
 <body>
+  <!-- Header / Nav -->
+  <header class="page-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">calv</a>
 
-    <header class="sub-header">
-        <nav>
-            <div class="nav-links" id="navLinks">
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
 
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+      <ul class="nav-menu">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
 
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About Me</a></li>
-                    <li><a href="index.html#projects">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+    <div class="overlay"></div>
 
-        </nav>
+    <div class="hero hero--compact">
+      <h1>Contact</h1>
+      <p>Here’s the best way to reach me.</p>
+    </div>
+  </header>
 
-        <h1>Contact Me</h1>
+  <!-- Contact Info -->
+  <main>
+    <section class="section contact-page">
+      <div class="contact-wrap contact-wrap--single">
 
-    </header>
+        <div class="contact-card contact-card--center">
+          <h2>Get in touch</h2>
+          <p class="muted">I’m always open to questions, collaborations, or just chatting.</p>
 
-
-    <!-- ---contact page--- -->
-
-    <section class="contact-me">
-
-        <div class="row">
-
-            <div class="contact-col">
-
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <span>
-                        <h5>614-634-4913</h5>
-                        <p>Call Me</p>
-                    </span>
-                </div>
-
-                <div>
-                    <i class="fa fa-envelope"></i>
-                    <span>
-                        <h5>calvinlanlim<br>@gmail.com</h5>
-                        <p>Email Me</p>
-                    </span>
-                </div>
-
+          <div class="contact-list">
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <a class="contact-value" href="mailto:calvinlanlim@gmail.com">
+                calvinlanlim@gmail.com
+              </a>
             </div>
 
-            <div class="contact-col">
-
-                <form action="form-handler.php" method="post">
-                    <input type="text" name="name" placeholder="Enter your name">
-                    <input type="email" name="email" placeholder="Enter email address" required>
-                    <input type="text" name="subject" placeholder="Enter your subject" required>
-
-                    <textarea name="message" cols="30" rows="8" placeholder="Message" required></textarea>
-
-                    <button type="submit" class="send-btn">Send Message</button>
-
-                </form>
-
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <a class="contact-value" href="tel:+16146344913">
+                614-634-4913
+              </a>
             </div>
 
+            <div class="contact-item">
+              <span class="contact-label">Instagram</span>
+              <a class="contact-value" href="https://www.instagram.com/calvvinlim/" target="_blank" rel="noreferrer">
+                @calvvinlim
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-label">YouTube</span>
+              <a class="contact-value" href="https://www.youtube.com/@pinao168" target="_blank" rel="noreferrer">
+                @pinao168
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-note">
+            <p class="muted">
+              Email is the best way to reach me for anything professional.
+            </p>
+            <a href="index.html#projects" class="btn btn--ghost">
+              View Projects
+            </a>
+          </div>
         </div>
 
-
-
+      </div>
     </section>
+  </main>
 
-    <!-- ---footer--- -->
+  <footer class="site-footer">
+    <p>© 2025 Calvin Lim. Made with ❤.</p>
+    <div class="social">
+      <a href="https://www.instagram.com/calvvinlim/" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/@pinao168" target="_blank">YouTube</a>
+    </div>
+  </footer>
 
-    <section class="footer">
-
-        <h4>Miscellaneous</h4>
-        <p>In case you want to keep up to date with me and my social medias.<br> You should check them out, I post some pretty cool stuff...</p>
-
-        <div class="icons">
-            <a href="https://www.instagram.com/calvvinlim/" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UCvBFRqtEmFNs8zrBKk4Z4Rw"><i class="fa fa-youtube-play"></i></a>
-        </div>
-
-        <p>this site was made with <i class="fa fa-heart-o"></i> and sleepless nights</p>
-
-    </section>
-
-    <!-- ---javascript---smh-->
-
-    <script>
-
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
-
-    </script>
-
-
-    
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
+  </script>
 </body>
 </html>
